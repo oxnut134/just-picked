@@ -1,0 +1,183 @@
+.detail_form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: " Gothic";
+}
+
+.detail_form_size_adjuster {
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column;*/
+}
+
+.detail_form_title_holder {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+}
+.detail_form_title {
+    width: 60%;
+    height: 45px;
+    /*margin-left: 8%;*/
+}
+
+.detail_form_title_adjust {
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+.detail_form_platform {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.move_image_to_horizontal_center {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.detail_form_image_display {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    /*justify-content:center;*/
+}
+
+.detail_form_image_wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.fruit_image {
+    width: 100%;
+}
+.detail_form_select_image {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+
+.detail_form_select_file_button {
+    width: 40%;
+    height: 30px;
+}
+.detail_form_selected_image {
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+.detail_form_input_container {
+    width: 25%;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.detail_form_input_column_name {
+    width: 90%;
+    height: 20px;
+}
+.detail_form_input_value {
+    width: 80%;
+    height: 40px;
+    color: #7b7b7b;
+}
+
+.detail_form_radio_button_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.dummy_space {
+    width: 15%;
+    height: 20px;
+}
+
+.detail_form_description_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.detail_form_description_sub_container {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.detail_form_description_column_name {
+    margin-top: 25px;
+}
+.detail_form_description_input {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 15px;
+    height: 40px;
+    color: #7b7b7b;
+}
+.detail_form_screen_width_define {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.detail_form_submit_button_container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+}
+.detail_form_main_buttons {
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.detail_form_submit_button {
+    width: 100%;
+    height: 100%;
+}
+/*.detail_form_back_button {
+    width: 95%;
+    height: 100%;
+    display: block;
+    padding: 10px 15px;
+    background-color: #007bff;*/ /* ボタンの背景色 */
+/*color: white;*/ /* テキストの色 */
+/*text-decoration: none;*/ /* 下線を消す */
+/*border-radius: 5px; /* 角を丸くする */
+/*}*/
+.detail_form_back_button {
+    width: 95%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    background-color: rgba(243, 243, 243, 0.6);
+    text-decoration: none;
+    font-family: " Gothic";
+    font-size: 13px;
+    font-style: bold;
+}
+
+.detail_form_update_button {
+    width: 95%;
+    height: 100%;
+    background-color: rgba(244, 216, 36, 0.865);
+    border: none;
+    border-radius:5px;
+}
+
+
+.garbage_can_image {
+    width: 25px;
+}

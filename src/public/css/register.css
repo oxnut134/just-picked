@@ -1,0 +1,194 @@
+.register_form {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: " Gothic";
+}
+
+.register_form_size_adjuster {
+    width: 100%;
+    /*height: 100%;*/
+}
+
+.register_form_title_holder {
+    width: 100%;
+    display: flex;
+
+    justify-content: center;
+    padding-bottom:10px;
+}
+.register_form_title {
+    width: 60%;
+    height: 45px;
+}
+
+.register_form_title_adjust {
+    width: 20%;
+    padding-bottom: 20px;
+}
+
+.register_form_platform {
+    width: 100%;
+    /*height: 100%;*/
+    display: flex;
+    justify-content: center;
+}
+.move_image_to_horizontal_center {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+}
+.register_form_select_image {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 0px;
+}
+
+/****************/
+
+.register_form_selected_image {
+    padding-bottom: 5px;
+    margin-right: 10px;
+}
+.register_form_input_container {
+    width: 60%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+.register_form_input_column_name {
+    width: 90%;
+    height: 20px;
+}
+
+.move_image_to_horizontal_center {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.register_form_image_display {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    /*justify-content:center;*/
+}
+
+.register_form_image_wrapper {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+}
+.fruit_image {
+    width: 40%;
+}
+.register_form_select_image {
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-top: 10px;
+}
+.register_form_selected_image {
+    font-size: 15px;
+    padding-top: 5px;
+}
+.register_form_select_file_button {
+    width: 50%;
+    height: 40px;
+    margin-left: 5px;
+}
+.register_form_selected_image {
+    padding: 8px;
+}
+
+.register_form_input_value {
+    width: 50%;
+    height: 30px;
+    color: rgb(174, 174, 174);
+}
+
+.register_form_radio_button_wrapper {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.dummy_space {
+    width: 15%;
+    height: 20px;
+}
+
+.register_form_description_container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.register_form_description_sub_container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.register_form_description_column_name {
+    margin-top: 25px;
+    margin-left: 10px;
+}
+.register_form_description_input {
+    width: 100%;
+    margin-left: 10px;
+    margin-top: 15px;
+    height: 40px;
+    color: rgb(174, 174, 174);
+}
+.register_form_screen_width_define {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.register_form_submit_button_container {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 80px;
+}
+.register_form_main_buttons {
+    width: 60%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+}
+.register_form_submit_button {
+    width: 100%;
+    height: 40px;
+}
+.register_form_back_button {
+    width: 95%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px;
+    background-color: rgba(243, 243, 243, 0.6);
+    text-decoration: none;
+    font-family: " Gothic";
+    font-size: 13px;
+    font-style: bold;
+}
+.register_form_update_button {
+    width: 95%;
+    height: 40px;
+    background-color: rgba(244, 216, 36, 0.865);
+    border: none;
+    border-radius: 5px;
+}
+.register_form_select_file_button {
+    width: 100%;
+    height: 30px;
+}
