@@ -73,45 +73,6 @@
 
 ------------------　ディレクトリ作成 -----------------
 
-C:\Users\user\coachtech\laravel>cd just-picked
-
-C:\Users\user\coachtech\laravel\just-picked>mkdir docker
-
-C:\Users\user\coachtech\laravel\just-picked>mkdir src
-
-C:\Users\user\coachtech\laravel\just-picked>copy nul docker-compose.yml
-1 個のファイルをコピーしました。
-
-C:\Users\user\coachtech\laravel\just-picked>cd docker
-
-C:\Users\user\coachtech\laravel\just-picked\docker>mkdir mysql
-
-C:\Users\user\coachtech\laravel\just-picked\docker>mkdir nginx
-
-C:\Users\user\coachtech\laravel\just-picked\docker>mkdir php
-
-C:\Users\user\coachtech\laravel\just-picked\docker>cd mysql
-
-C:\Users\user\coachtech\laravel\just-picked\docker\mysql>mkdir data
-
-C:\Users\user\coachtech\laravel\just-picked\docker\mysql>copy nul my.cnf
-1 個のファイルをコピーしました。
-
-C:\Users\user\coachtech\laravel\just-picked\docker\mysql>cd ../nginx
-
-C:\Users\user\coachtech\laravel\just-picked\docker\nginx>copy nul default.conf
-1 個のファイルをコピーしました。
-
-C:\Users\user\coachtech\laravel\just-picked\docker\nginx>cd ../php
-
-C:\Users\user\coachtech\laravel\just-picked\docker\php>copy nul Dockerfile
-1 個のファイルをコピーしました。
-
-C:\Users\user\coachtech\laravel\just-picked\docker\php>copy nul php.ini
-1 個のファイルをコピーしました。
-
-C:\Users\user\coachtech\laravel\just-picked\docker\php>cd ../../
-
 C:\Users\user\coachtech\laravel\just-picked>tree /f
 フォルダー パスの一覧:  ボリューム Windows
 ボリューム シリアル番号は 00BF-AB0B です
@@ -140,19 +101,13 @@ C:\Users\user\coachtech\laravel\just-picked>docker-compose up -d — build
 
 [+] Building 1.4s (11/11) FINISHED                        docker:desktop-linux
 => [php internal] load build definition from Dockerfile                  0.1s
-=> => transferring dockerfile: 384B                                      0.0s
 
 .
 
 .
 
-.
 
-.
-
-
-C:\Users\user\coachtech\laravel\just-picked>docker-compose exec php bash
-time="2025-05-26T08:54:28+09:00" level=warning msg="C:\\Users\\user\\coachtech\\laravel\\just-picked\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
+msg="C:\\Users\\user\\coachtech\\laravel\\just-picked\\docker-compose.yml: the attribute `version` is obsolete, it will be ignored, please remove it to avoid potential confusion"
 
 
 ----------------------- composer 状態確認　------------------------------------
@@ -183,23 +138,11 @@ root@be49dc270ee3:/var/www#
 
 
 root@be49dc270ee3:/var/www# composer create-project "laravel/laravel=8.*" . --prefer-dist
+
 Creating a "laravel/laravel=8.*" project at "./"
 Installing laravel/laravel (v8.6.12)
 
 - Downloading laravel/laravel (v8.6.12)
-- Installing laravel/laravel (v8.6.12): Extracting archive
-Created project in /var/www/.
-
-> @php -r "file_exists('.env') || copy('.env.example', '.env');"
-Loading composer repositories with package information
-Updating dependencies
-Lock file operations: 107 installs, 0 updates, 0 removals
-> 
-- Locking asm89/stack-cors (v2.3.0)
-- Locking brick/math (0.9.3)
-- Locking carbonphp/carbon-doctrine-types (2.1
-
-.
 
 .
 
@@ -244,10 +187,54 @@ Psy Shell v0.12.8 (PHP 7.4.9 — cli) by Justin Hileman
 >echo Carbon\Carbon::now();
 2025-05-26 09:59:07⏎
 
----------------- migration ------------------------------------
+=============== migration ==============================
 
 
 
+2025_05_29_060017_create_seasons_table.php
+2025_05_30_053310_create_products_table.php
+2025_05_30_060254_create_product_season_table.php
+
+
+================ seeding =============================
+
+DatabaseSeeder.php
+ProductSeasonsTableSeeder.php
+ProductsTableSeeder.php
+SeasonsTableSeeder.php
+
+================ git clone ===========================
+
+git clone git@github.com:oxnut134/just-picked.git
+
+
+================ clone　動作確認 ======================
+
+@ff4bd630d77c:/var/www# composer install
+
+copy .env.example .env
+
+<< .env >>
+APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=mysql    <------- 修正
+DB_PORT=3306
+DB_DATABASE=laravel_db    　<------- 修正
+DB_USERNAME=laravel_user    <------- 修正
+DB_PASSWORD=laravel_pass    <------- 修正
+
+@76e663b6feed:/var/www# php artisan key:generate
+
+localhostで起動
 
 
 
